@@ -37,7 +37,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding-left: 100px;
+            padding-left: 50px;
             padding-top: 1px;
         }
 
@@ -103,8 +103,88 @@
 
             div.container nav ul li {
                 display: inline-block;
-                font-size: 18px;
+                font-size: 22px;
                 padding: 15px;
+            }
+
+        div.container section {
+            display: flex;
+            align-items: flex-start;
+            min-height: 250px;
+            margin-left: 60px;
+            padding-top: 15px;
+        }
+
+            div.container section div.leftbox {
+                display: inline-block;
+                width: 190px;
+                padding: 10px;
+            }
+
+                div.container section div.leftbox ul li {
+                    text-align: center;
+                    list-style: none;
+                    font-size: 16px;
+                    padding: 2px;
+                    color: whitesmoke;
+                }
+
+                div.container section div.leftbox ul li a {
+                    color: whitesmoke;
+                }
+
+                div.container section div.leftbox ul li:before {
+                    content: ">>";
+                    padding-right: 3px;
+                    font-size: 8px;
+                    vertical-align: middle;
+                    color: goldenrod;
+                }
+
+            div.container section div.rightbox {
+                display: inline-block;
+                width: 565px;
+                padding: 10px;
+            }
+
+                div.container section div.rightbox p {
+                    padding: 5px;
+                    color: whitesmoke;
+                    font-size: 13px;
+                    text-align: center;
+                    vertical-align: middle;
+                }
+
+                div.container section div.rightbox h3 {
+                    padding: 5px;
+                    font-size: 24px;
+                    font-style: italic;
+                    font-weight: 100;
+                    color: goldenrod;
+                    text-align: center;
+                }
+
+                div.container section div.rightbox p.larger {
+                    font-size: 16px;
+                }
+
+        div.container div.infobox {
+            width: 908px;
+            display: flex;
+            align-items: flex-start;
+            min-height: 300px;
+            padding-left: 60px;
+            background-color: whitesmoke;
+            border-top: 3px solid #1a3852;
+        }
+
+            div.container div.infobox div.info {
+                display: inline-block;
+                width: 330px;
+                margin: 20px;
+                padding-right: 50px;
+                border-top: 5px solid #75a8d3;
+                min-height: 250px;
             }
 
     </style>
@@ -138,12 +218,40 @@
     </nav>
     <section>
         <div class="leftbox">
-
+            <ul>
+                <li><a href="#">Docs</a></li>
+                <li><a href="#">Audio/Visual Talks</a></li>
+                <li><a href="#">Beginner's Guide</a></li>
+                <li><a href="#">Developer's Guide</a></li>
+                <li><a href="#">PEP Index</a></li>
+                <li><a href="#">Python Books</a></li>
+                <li><a href="#">FAQ</a></li>
+            </ul>
         </div>
         <div class="rightbox">
-
+            <p>First appearing in 1991, Python is a general-purpose, high-level, interpreted programming language whose design focus emphasizes code readability. Whether for processing/analyzing data to powering many well-known applications, Python is not only a great language for new programmers but also powerful enough for seasoned developers building whatever they can think of.</p>
+            <h3>Beautiful is better than ugly;</h3>
+            <h3>Explicit is better than implicit;</h3>
+            <h3>Simple is better than complex;</h3>
+            <h3>Complex is better than complicated;</h3>
+            <h3>Readability counts;</h3>
+            <p class="larger">The Zen of Python</p>
         </div>
     </section>
+    <div class="infobox">
+        <div class="info">
+            <h2>Getting Started</h2>
+            <p>Python can be easy to pick up whether you're a first time programmer or you're experienced with other languages. The following pages are a useful first step to get on your way writing programs with Python!</p>
+            <ul>
+                <li><a href="#">Beginner's Guide, Programmers</a></li>
+                <li><a href="#">Beginner's Guide, Non-Programmers</a></li>
+                <li><a href="#">Code sample and snippets for Beginners</a></li>
+            </ul>
+        </div>
+        <div class="info">
+
+        </div>
+    </div>
 </div>
 </body>
 </html>
